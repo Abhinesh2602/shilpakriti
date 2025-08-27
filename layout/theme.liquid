@@ -89,13 +89,17 @@
         {%- if settings.enable_animationscroll -%}
           <div data-scroll-section>
         {% endif %}
-        {%- section 'custom-slideshow' -%}
         {%- if settings.enable_animationscroll -%}
           </div>
         {% endif %}
         {{ content_for_layout }}
         {%- if settings.enable_animationscroll -%}
           </div>
+        {% endif %}
+
+        {% if template == 'index' %}
+          {% section 'collection-circles' %}
+          {% section 'slideshow-custom-abhinesh' %}
         {% endif %}
       </main>
 

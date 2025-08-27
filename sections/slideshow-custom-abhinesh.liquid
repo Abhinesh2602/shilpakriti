@@ -1,0 +1,289 @@
+{% comment %} 
+                              Slideshow – Responsive, Autoplay (JS), Desktop & Mobile Images 
+{% endcomment %}
+
+<div class="slideshow-js-wrapper" id="SlideshowJS-{{ section.id }}">
+  <div class="slideshow-js-track">
+    {% for block in section.blocks %}
+      {% assign desktop_image = block.settings.image %}
+      {% assign mobile_image = block.settings.image_mobile %}
+      {% if desktop_image or mobile_image %}
+        <div class="slideshow-js-slide">
+          <picture>
+            {% if mobile_image %}
+              <source media="(max-width: 767px)" srcset="{{ mobile_image | image_url: width: 800 }}">
+            {% endif %}
+            {% if desktop_image %}
+              <img
+                src="{{ desktop_image | image_url: width: 1600 }}"
+                alt="Slide"
+                loading="lazy">
+            {% endif %}
+          </picture>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="slideshow-dots">
+    {% for block in section.blocks %}
+      {% if block.settings.image or block.settings.image_mobile %}
+        <button
+          class="dot"
+          data-index="{{ forloop.index0 }}"
+          aria-label="Go to slide {{ forloop.index }}"></button>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .slideshow-js-wrapper {
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y pan-x pinch-zoom;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slideshow-js-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    will-change: transform;
+    cursor: grab;
+  }
+  .slideshow-js-track:active {
+    cursor: grabbing;
+  }
+  .slideshow-js-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .slideshow-js-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+
+  .slideshow-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .dot.active {
+    background: #fff;
+  }
+
+  @media (max-width: 767px) {
+    .slideshow-dots {
+      bottom: 10px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.getElementById("SlideshowJS-{{ section.id }}");
+    const track = wrapper.querySelector(".slideshow-js-track");
+    const slides = wrapper.querySelectorAll(".slideshow-js-slide");
+    const dots = wrapper.querySelectorAll(".dot");
+  
+    if (slides.length <= 1) return; // Only 1 image – skip everything
+  
+    let currentIndex = 0;
+    let startX = 0;
+    let startY = 0;
+    let currentX = 0;
+    let isDragging = false;
+    let isHorizontalSwipe = false;
+    let autoplayInterval;
+  
+    // Initialize first dot as active
+    dots[0].classList.add('active');
+  
+    function goToSlide(index) {
+      currentIndex = index;
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      // Update dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+  
+    function startAutoplay() {
+      clearInterval(autoplayInterval);
+      autoplayInterval = setInterval(() => {
+        goToSlide((currentIndex + 1) % slides.length);
+      }, 5000);
+    }
+  
+    // Touch/Mouse Events
+    function handleDragStart(e) {
+      isDragging = true;
+      isHorizontalSwipe = false;
+      startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+      startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
+      currentX = startX;
+      track.style.transition = 'none';
+      clearInterval(autoplayInterval);
+    }
+  
+    function handleDragMove(e) {
+      if (!isDragging) return;
+      
+      const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+      const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+      
+      const diffX = Math.abs(x - startX);
+      const diffY = Math.abs(y - startY);
+      
+      // Determine swipe direction only once
+      if (!isHorizontalSwipe && (diffX > 10 || diffY > 10)) {
+        isHorizontalSwipe = diffX > diffY;
+        
+        // If it's not a horizontal swipe, stop handling and allow normal scroll
+        if (!isHorizontalSwipe) {
+          isDragging = false;
+          track.style.transition = 'transform 0.6s ease';
+          goToSlide(currentIndex);
+          startAutoplay();
+          return;
+        }
+      }
+      
+      // Only handle horizontal swipes
+      if (isHorizontalSwipe && e.type === 'touchmove') {
+        e.preventDefault();
+      }
+      
+      if (!isHorizontalSwipe) return;
+  
+      const diff = x - startX;
+      const slideWidth = wrapper.offsetWidth;
+      const maxDiff = slideWidth * (slides.length - 1);
+      
+      currentX = x;
+      
+      // Calculate drag position with boundaries
+      const dragX = Math.max(Math.min(diff - (currentIndex * slideWidth), 0), -maxDiff);
+      track.style.transform = `translateX(${dragX}px)`;
+    }
+  
+    function handleDragEnd() {
+      if (!isDragging || !isHorizontalSwipe) {
+        isDragging = false;
+        return;
+      }
+      
+      isDragging = false;
+      
+      const slideWidth = wrapper.offsetWidth;
+      const diff = currentX - startX;
+      const threshold = slideWidth * 0.2; // 20% threshold for slide change
+      
+      track.style.transition = 'transform 0.6s ease';
+      
+      if (Math.abs(diff) > threshold) {
+        // Slide change
+        if (diff > 0 && currentIndex > 0) {
+          goToSlide(currentIndex - 1);
+        } else if (diff < 0 && currentIndex < slides.length - 1) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(currentIndex);
+        }
+      } else {
+        goToSlide(currentIndex);
+      }
+      
+      startAutoplay();
+    }
+  
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+        startAutoplay();
+      });
+    });
+  
+    // Add event listeners - attach to the slideshow wrapper, not document
+    track.addEventListener('mousedown', handleDragStart);
+    track.addEventListener('touchstart', handleDragStart, { passive: true });
+    
+    // These need to be on document to handle movement outside the element
+    document.addEventListener('mousemove', handleDragMove);
+    document.addEventListener('touchmove', handleDragMove, { passive: false });
+    
+    document.addEventListener('mouseup', handleDragEnd);
+    document.addEventListener('touchend', handleDragEnd);
+    document.addEventListener('touchcancel', handleDragEnd);
+  
+    // Start autoplay
+    startAutoplay();
+  
+    // Cleanup
+    wrapper.addEventListener('mouseleave', () => {
+      if (isDragging) {
+        handleDragEnd();
+      }
+    });
+    
+    // Pause autoplay on hover/focus
+    wrapper.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+    wrapper.addEventListener('mouseleave', startAutoplay);
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "JS Autoplay Slideshow",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "image_slide",
+        "name": "Image Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Desktop Image"
+          }, {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Mobile Image"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 6,
+    "presets": [
+      {
+        "name": "JS Autoplay Slideshow",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
