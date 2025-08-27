@@ -9,6 +9,62 @@
  */
 {
   "sections": {
+    "slideshow_custom_abhinesh_XcFFGJ": {
+      "type": "slideshow-custom-abhinesh",
+      "blocks": {
+        "image_slide_ETRL7e": {
+          "type": "image_slide",
+          "settings": {
+            "image": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home.jpg",
+            "image_mobile": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home_447_x_500_px__mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_ETRL7e"
+      ],
+      "name": "JS Autoplay Slideshow",
+      "settings": {}
+    },
+    "collection_circles_Aw3eUW": {
+      "type": "collection-circles",
+      "blocks": {
+        "collection_T38arP": {
+          "type": "collection",
+          "settings": {
+            "collection": "lord-balaji"
+          }
+        },
+        "collection_d8yk9M": {
+          "type": "collection",
+          "settings": {
+            "collection": "lord-natarajan"
+          }
+        },
+        "collection_W8NExM": {
+          "type": "collection",
+          "settings": {
+            "collection": "lord-shiva"
+          }
+        },
+        "collection_UXTcK6": {
+          "type": "collection",
+          "settings": {
+            "collection": "lord-balaji"
+          }
+        }
+      },
+      "block_order": [
+        "collection_T38arP",
+        "collection_d8yk9M",
+        "collection_W8NExM",
+        "collection_UXTcK6"
+      ],
+      "name": "Collection Circles",
+      "settings": {
+        "title": "Shop by Category"
+      }
+    },
     "5b562030-1dcd-41c9-ac21-aee8367abbd3": {
       "type": "product-list-swiper",
       "settings": {
@@ -39,7 +95,6 @@
           "type": "banner",
           "settings": {
             "width": "6",
-            "image": "shopify://shop_images/offer-banner2.jpg",
             "subtitle": "Exclusive Deals Await",
             "color_sub": "#e35353",
             "title": "UNLOCK YOUR BEAUTY<br> POTENTIAL",
@@ -61,7 +116,6 @@
           "type": "banner",
           "settings": {
             "width": "6",
-            "image": "shopify://shop_images/offer-banner1.jpg",
             "subtitle": "Timeless Beauty offer's",
             "color_sub": "#e35353",
             "title": "EXCLUSIVE DEALS ON <br>LUXE ESSENTIALS",
@@ -117,8 +171,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "ELEVATE YOUR BEAUTY RITUAL",
             "description": "Revitalize Your Skin with Premium Formulas",
-            "icon": "",
-            "image_icon": "shopify://shop_images/icon5.png"
+            "icon": ""
           }
         },
         "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-2": {
@@ -127,8 +180,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "PURE ELEGANCE, REAL RESULTS",
             "description": "Elevate Your Look with High-Quality Cosmetics",
-            "icon": "",
-            "image_icon": "shopify://shop_images/icon7.png"
+            "icon": ""
           }
         },
         "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-3": {
@@ -137,8 +189,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "EMBRACE YOUR <br>BEAUTY",
             "description": "Beauty Without Harm: Ethical and Cruelty-Free",
-            "icon": "",
-            "image_icon": "shopify://shop_images/icon4.png"
+            "icon": ""
           }
         },
         "9a8af888-00e2-4e5f-be50-00271a79a56e": {
@@ -147,8 +198,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "GLAMOROUS <br>MAKEUP",
             "description": "Confidence in Every Purchase with Our Guarantee",
-            "icon": "<i class=\"icon-arrow-thin-left\"></i>",
-            "image_icon": "shopify://shop_images/icon8.png"
+            "icon": "<i class=\"icon-arrow-thin-left\"></i>"
           }
         }
       },
@@ -194,7 +244,6 @@
           "type": "quote",
           "settings": {
             "title": "\"Enhance your beauty with the power of self-care. Unleash confidence through.\"",
-            "avatar": "shopify://shop_images/carousel9.png",
             "author": "",
             "info": "",
             "rate": 0,
@@ -205,7 +254,6 @@
           "type": "quote",
           "settings": {
             "title": "\"Unlock the power of beauty with our curated collection — where skincare meets artistry.\"",
-            "avatar": "shopify://shop_images/carousel10.png",
             "author": "",
             "info": "",
             "rate": 0,
@@ -216,7 +264,6 @@
           "type": "quote",
           "settings": {
             "title": "\"Embrace the beauty within. Our cosmetics and skincare are more than products.\"",
-            "avatar": "shopify://shop_images/carousel11.png",
             "author": "",
             "info": "",
             "rate": 0,
@@ -276,7 +323,6 @@
             "button": "discover now",
             "link": "#",
             "style_btn": "btn-underline btn-underline-white",
-            "image": "shopify://shop_images/filler-1.jpg",
             "video": "",
             "colortabimage": "#ffffff",
             "bg-overlay": "#000000",
@@ -325,7 +371,6 @@
         "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-1": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/filler-3.jpg",
             "linkimage": "",
             "subtitle": "Reveal Your Timeless Beauty",
             "title": "Discover Luxurious Cosmetics & Skincare",
@@ -339,7 +384,6 @@
         "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-2": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/filler-2.jpg",
             "linkimage": "",
             "subtitle": "Discover Timeless Beauty",
             "title": "Elevate Your Routine with Our Exquisite Cosmetics & Skincare",
@@ -381,56 +425,48 @@
         "1ea584b4-c319-4a6f-ac76-df5b20cc80b9": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-1.jpg",
             "link": ""
           }
         },
         "0ae42cd5-e8f3-4a45-ab9c-ad3b20972492": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-2.jpg",
             "link": ""
           }
         },
         "d54ccaef-6e7c-4b71-bf74-d2cd55cca0ed": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-3.jpg",
             "link": ""
           }
         },
         "ebfb6f46-1f14-4f33-a735-4197db47b620": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-4.jpg",
             "link": ""
           }
         },
         "3e84c94f-6581-40b0-a877-fbf249ec2e8f": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-5.jpg",
             "link": ""
           }
         },
         "2f3c0ad1-9797-4b92-8642-4d870f8c5ea6": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-6.jpg",
             "link": ""
           }
         },
         "e2d7c07d-a8ff-4b84-a996-63cf07a8e369": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-7.jpg",
             "link": ""
           }
         },
         "7bf8387c-5ce4-40bc-944f-cd0ff9659c37": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/insta-8.jpg",
             "link": ""
           }
         }
@@ -472,6 +508,8 @@
     }
   },
   "order": [
+    "slideshow_custom_abhinesh_XcFFGJ",
+    "collection_circles_Aw3eUW",
     "5b562030-1dcd-41c9-ac21-aee8367abbd3",
     "78a84a3d-79cc-4e91-87bc-c68dcffe3bf1",
     "c249c797-4270-4d1f-ab43-9e8a7ba4cc4f",

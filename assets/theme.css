@@ -6375,6 +6375,7 @@ p a:not(.button):focus,
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 15px;
+  background-color: #721c24;
 }
 .collection-sort {
   display: inline-block;
