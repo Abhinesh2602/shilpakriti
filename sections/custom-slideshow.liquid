@@ -1,0 +1,154 @@
+{% schema %}
+  {
+    "name": "Swipe Slideshow",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Desktop Images"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_image_1",
+        "label": "Desktop Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_image_2",
+        "label": "Desktop Image 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_image_3",
+        "label": "Desktop Image 3"
+      }, {
+        "type": "header",
+        "content": "Mobile Images"
+      }, {
+        "type": "image_picker",
+        "id": "mobile_image_1",
+        "label": "Mobile Image 1"
+      }, {
+        "type": "image_picker",
+        "id": "mobile_image_2",
+        "label": "Mobile Image 2"
+      }, {
+        "type": "image_picker",
+        "id": "mobile_image_3",
+        "label": "Mobile Image 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Swipeable Slideshow",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="custom-slideshow-wrapper">
+  <div class="custom-slideshow">
+    {% if section.settings.desktop_image_1 or section.settings.mobile_image_1 %}
+      <div class="custom-slide">
+        <picture>
+          {% if section.settings.mobile_image_1 %}
+            <source media="(max-width: 749px)" srcset="{{ section.settings.mobile_image_1 | image_url }}">
+          {% endif %}
+          {% if section.settings.desktop_image_1 %}
+            <img
+              src="{{ section.settings.desktop_image_1 | image_url }}"
+              alt="Slideshow Image 1"
+              style="width:100%;height:auto;object-fit:contain;">
+          {% endif %}
+        </picture>
+      </div>
+    {% endif %}
+    {% if section.settings.desktop_image_2 or section.settings.mobile_image_2 %}
+      <div class="custom-slide">
+        <picture>
+          {% if section.settings.mobile_image_2 %}
+            <source media="(max-width: 749px)" srcset="{{ section.settings.mobile_image_2 | image_url }}">
+          {% endif %}
+          {% if section.settings.desktop_image_2 %}
+            <img
+              src="{{ section.settings.desktop_image_2 | image_url }}"
+              alt="Slideshow Image 2"
+              style="width:100%;height:auto;object-fit:contain;">
+          {% endif %}
+        </picture>
+      </div>
+    {% endif %}
+    {% if section.settings.desktop_image_3 or section.settings.mobile_image_3 %}
+      <div class="custom-slide">
+        <picture>
+          {% if section.settings.mobile_image_3 %}
+            <source media="(max-width: 749px)" srcset="{{ section.settings.mobile_image_3 | image_url }}">
+          {% endif %}
+          {% if section.settings.desktop_image_3 %}
+            <img
+              src="{{ section.settings.desktop_image_3 | image_url }}"
+              alt="Slideshow Image 3"
+              style="width:100%;height:auto;object-fit:contain;">
+          {% endif %}
+        </picture>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .custom-slideshow-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  .custom-slideshow {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .custom-slide {
+    min-width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+</style>
+
+<script>
+  // Simple swipe functionality for desktop and mobile
+  const slideshow = document.querySelector('.custom-slideshow');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  if (slideshow) {
+  slideshow.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slideshow.classList.add('active');
+    startX = e.pageX - slideshow.offsetLeft;
+    scrollLeft = slideshow.scrollLeft;
+  });
+  slideshow.addEventListener('mouseleave', () => {
+    isDown = false;
+    slideshow.classList.remove('active');
+  });
+  slideshow.addEventListener('mouseup', () => {
+    isDown = false;
+    slideshow.classList.remove('active');
+  });
+  slideshow.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slideshow.offsetLeft;
+    const walk = (x - startX) * 2;
+    slideshow.scrollLeft = scrollLeft - walk;
+  });
+  }
+</script>

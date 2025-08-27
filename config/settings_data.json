@@ -621,6 +621,7 @@
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home.jpg",
+              "image_mobile": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home_447_x_500_px__mobile.jpg",
               "alignment": "center center",
               "text_alignment": "left center",
               "bgwrap": "#f8ede7",
@@ -2631,6 +2632,13 @@
           "96fa1ba2-600b-4138-90c2-bf903be331e1"
         ],
         "settings": {}
+      },
+      "custom-slideshow": {
+        "type": "custom-slideshow",
+        "settings": {
+          "desktop_image_1": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home.jpg",
+          "mobile_image_1": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home_447_x_500_px__mobile.jpg"
+        }
       }
     },
     "content_for_index": [
