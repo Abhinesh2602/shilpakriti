@@ -79,7 +79,7 @@
     "page_breadcrumb": "about-us,about-us-v2",
     "color_breadcrumbs": "#222222",
     "color_breadcrumbs_active": "#222222",
-    "bg_breadcrumb": "#ffffff",
+    "bg_breadcrumb": "#f9f5ec",
     "align_bread": "left",
     "layout_bread": "container",
     "share_image": "",
@@ -2639,6 +2639,16 @@
           "desktop_image_1": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home.jpg",
           "mobile_image_1": "shopify://shop_images/Sacred_Art_Timeless_Craft_From_India_to_Your_Home_447_x_500_px__mobile.jpg"
         }
+      },
+      "collection-circles": {
+        "type": "collection-circles",
+        "settings": {
+          "title": "Shop by Category"
+        }
+      },
+      "slideshow-custom-abhinesh": {
+        "type": "slideshow-custom-abhinesh",
+        "settings": {}
       }
     },
     "content_for_index": [
