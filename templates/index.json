@@ -1,0 +1,483 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "5b562030-1dcd-41c9-ac21-aee8367abbd3": {
+      "type": "product-list-swiper",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Luxurious Cosmetics and Skincare",
+        "title": "Elevate Your Beauty Experience",
+        "des": "",
+        "align-heading": "center",
+        "collection": "eyeshadow",
+        "limit": 10,
+        "perviewDesktop": 3,
+        "spaceBetween": 30,
+        "nowrap": true,
+        "arrows": true,
+        "scrollbar": true,
+        "paddingsection": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "78a84a3d-79cc-4e91-87bc-c68dcffe3bf1": {
+      "type": "grid-banner",
+      "blocks": {
+        "template--16458105913475__78a84a3d-79cc-4e91-87bc-c68dcffe3bf1-banner-1": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "image": "shopify://shop_images/offer-banner2.jpg",
+            "subtitle": "Exclusive Deals Await",
+            "color_sub": "#e35353",
+            "title": "UNLOCK YOUR BEAUTY<br> POTENTIAL",
+            "color_title": "#000000",
+            "size_text": "h2",
+            "description": "Elevate your routine with our curated beauty <br>essentials. Limited-time offers on radiant skincare.",
+            "bg_color": "#ffffff",
+            "colordef": "#222222",
+            "opacity_bg": 0,
+            "style_btn": "btn-underline btn-underline-white",
+            "button_text": "View Products",
+            "button_link": "",
+            "vertical": "mid",
+            "horizontal": "left",
+            "text_align": "left"
+          }
+        },
+        "template--16458105913475__78a84a3d-79cc-4e91-87bc-c68dcffe3bf1-banner-2": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "image": "shopify://shop_images/offer-banner1.jpg",
+            "subtitle": "Timeless Beauty offer's",
+            "color_sub": "#e35353",
+            "title": "EXCLUSIVE DEALS ON <br>LUXE ESSENTIALS",
+            "color_title": "#000000",
+            "size_text": "h2",
+            "description": "Transform your beauty routine with our premium<br> skincare and cosmetic essentials.",
+            "bg_color": "#ffffff",
+            "colordef": "#222222",
+            "opacity_bg": 0,
+            "style_btn": "btn-underline btn-underline-white",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "vertical": "mid",
+            "horizontal": "right",
+            "text_align": "right"
+          }
+        }
+      },
+      "block_order": [
+        "template--16458105913475__78a84a3d-79cc-4e91-87bc-c68dcffe3bf1-banner-1",
+        "template--16458105913475__78a84a3d-79cc-4e91-87bc-c68dcffe3bf1-banner-2"
+      ],
+      "custom_css": [
+        ".btn-underline-white:hover {color: #f00 !important; border-bottom-color: #f00 !important;}",
+        ".btn-underline-white {color: #222 !important; border-bottom-color: #222 !important;}",
+        ".banner-theme img {max-width: unset; width: 100%;}"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "no_gutter": false,
+        "show_overlay": true,
+        "gradient_overlay": true,
+        "bg_overlay": "#000000",
+        "opacity_overlay": 0.1,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "c249c797-4270-4d1f-ab43-9e8a7ba4cc4f": {
+      "type": "service",
+      "blocks": {
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-1": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "ELEVATE YOUR BEAUTY RITUAL",
+            "description": "Revitalize Your Skin with Premium Formulas",
+            "icon": "",
+            "image_icon": "shopify://shop_images/icon5.png"
+          }
+        },
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-2": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "PURE ELEGANCE, REAL RESULTS",
+            "description": "Elevate Your Look with High-Quality Cosmetics",
+            "icon": "",
+            "image_icon": "shopify://shop_images/icon7.png"
+          }
+        },
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-3": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "EMBRACE YOUR <br>BEAUTY",
+            "description": "Beauty Without Harm: Ethical and Cruelty-Free",
+            "icon": "",
+            "image_icon": "shopify://shop_images/icon4.png"
+          }
+        },
+        "9a8af888-00e2-4e5f-be50-00271a79a56e": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "GLAMOROUS <br>MAKEUP",
+            "description": "Confidence in Every Purchase with Our Guarantee",
+            "icon": "<i class=\"icon-arrow-thin-left\"></i>",
+            "image_icon": "shopify://shop_images/icon8.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-1",
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-2",
+        "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-3",
+        "9a8af888-00e2-4e5f-be50-00271a79a56e"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "rows": "1",
+        "show": 4,
+        "paddingbox": "80px 0px 80px 0px",
+        "iconcolor": "#222222",
+        "titlecolor": "#222222",
+        "subcolor": "#999999",
+        "color_border": "rgba(0,0,0,0)",
+        "size": 50,
+        "service_heading": "h5",
+        "layout": "style-2",
+        "enable_carousel": true,
+        "arrows": false,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "076802e8-4d1d-49c0-92cf-72ec8c7302a1": {
+      "type": "quotes",
+      "blocks": {
+        "template--16458105913475__076802e8-4d1d-49c0-92cf-72ec8c7302a1-quote-1": {
+          "type": "quote",
+          "settings": {
+            "title": "\"Enhance your beauty with the power of self-care. Unleash confidence through.\"",
+            "avatar": "shopify://shop_images/carousel9.png",
+            "author": "",
+            "info": "",
+            "rate": 0,
+            "quote": ""
+          }
+        },
+        "0ebd014d-5265-45c8-b784-62a4037752a9": {
+          "type": "quote",
+          "settings": {
+            "title": "\"Unlock the power of beauty with our curated collection — where skincare meets artistry.\"",
+            "avatar": "shopify://shop_images/carousel10.png",
+            "author": "",
+            "info": "",
+            "rate": 0,
+            "quote": ""
+          }
+        },
+        "e1ebe254-0e76-4595-a01f-32818225fde3": {
+          "type": "quote",
+          "settings": {
+            "title": "\"Embrace the beauty within. Our cosmetics and skincare are more than products.\"",
+            "avatar": "shopify://shop_images/carousel11.png",
+            "author": "",
+            "info": "",
+            "rate": 0,
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16458105913475__076802e8-4d1d-49c0-92cf-72ec8c7302a1-quote-1",
+        "0ebd014d-5265-45c8-b784-62a4037752a9",
+        "e1ebe254-0e76-4595-a01f-32818225fde3"
+      ],
+      "custom_css": [
+        ".author-avatar img {border-radius: 0 !important;}",
+        ".author-avatar {border-radius: 0 !important; width: 60px; height: 60px;}",
+        ".d-flex.align-items-center.justify-content-center {order: 1; margin: 0 auto 30px;}",
+        ".quote-content-top {order: 2;}"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#efd6c9",
+        "title_top": "",
+        "title": "Showcased In",
+        "des": "",
+        "align-heading": "center",
+        "aligntext": "text-center",
+        "style": "style-1",
+        "color_rate": "#e9e9e9",
+        "color_rated": "#000000",
+        "size_text": "txt-body",
+        "bg_item": "rgba(0,0,0,0)",
+        "widthcolumn": 100,
+        "enable_padding_inner": true,
+        "show": 3,
+        "arrows": false,
+        "draggable": false,
+        "dots": false,
+        "infinite": false,
+        "paddingsection": "40px 0px 30px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "cecf0886-05b4-4828-81ff-5950804dfcc4": {
+      "type": "product-with-image",
+      "blocks": {
+        "template--21723502674220__cecf0886-05b4-4828-81ff-5950804dfcc4-banner-1": {
+          "type": "banner",
+          "settings": {
+            "subtitle": "Beauty Beyond Boundaries",
+            "title": "OUR EXQUISITE COLLECTION OF MUST-HAVE ESSENTIALS",
+            "size_text": "h2",
+            "subtext": "Elevate your beauty ritual with our carefully curated selection.",
+            "pos_banner": "mid-center",
+            "button": "discover now",
+            "link": "#",
+            "style_btn": "btn-underline btn-underline-white",
+            "image": "shopify://shop_images/filler-1.jpg",
+            "video": "",
+            "colortabimage": "#ffffff",
+            "bg-overlay": "#000000",
+            "bg-opacity": 0.2
+          }
+        },
+        "template--21723502674220__cecf0886-05b4-4828-81ff-5950804dfcc4-product-1": {
+          "type": "product",
+          "settings": {
+            "product_list": [
+              "crystal-clear-cleansing-foam",
+              "enchanted-rose-perfume",
+              "silk-elegance-hair-serum",
+              "diamond-dew-drop-nail-polish"
+            ],
+            "column": "2",
+            "limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--21723502674220__cecf0886-05b4-4828-81ff-5950804dfcc4-banner-1",
+        "template--21723502674220__cecf0886-05b4-4828-81ff-5950804dfcc4-product-1"
+      ],
+      "custom_css": [
+        ".subtop {color: var(--header-menuhover) !important;}"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "Discover Beauty Essentials",
+        "title": "OUR SIGNATURE COLLECTION",
+        "des": "Explore our curated selection of luxurious beauty products, meticulously crafted to enhance your natural radiance and boost your confidence.",
+        "align-heading": "center",
+        "pos_image": "normal",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "ca1db164-a128-4943-8c1e-bf73e2391e40": {
+      "type": "image-content-5",
+      "blocks": {
+        "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-1": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/filler-3.jpg",
+            "linkimage": "",
+            "subtitle": "Reveal Your Timeless Beauty",
+            "title": "Discover Luxurious Cosmetics & Skincare",
+            "size_text": "h4",
+            "text": "<p>Immerse yourself in a world of luxury with our curated collection of beauty essentials. From rejuvenating skincare to glamorous cosmetics, each product is crafted to enhance your natural radiance. </p>",
+            "button": "discover now",
+            "link": "",
+            "style_btn": "btn-theme"
+          }
+        },
+        "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/filler-2.jpg",
+            "linkimage": "",
+            "subtitle": "Discover Timeless Beauty",
+            "title": "Elevate Your Routine with Our Exquisite Cosmetics & Skincare",
+            "size_text": "h4",
+            "text": "<p>Experience the allure of radiant beauty. Our premium collection of cosmetics and skincare is crafted to enhance your natural glow. Unveil the secret to timeless allure and indulge.</p>",
+            "button": "discover now",
+            "link": "",
+            "style_btn": "btn-theme"
+          }
+        }
+      },
+      "block_order": [
+        "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-1",
+        "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-2"
+      ],
+      "custom_css": [
+        ".layout-dynamic .layout-dynamic--item:nth-child(4n + 3) {margin: 0;}",
+        ".layout-dynamic .layout-dynamic--item:nth-child(odd) {float: none;}",
+        ".layout-dynamic .layout-dynamic--item:nth-child(4n + 2) {margin: 0;}",
+        ".layout-dynamic .layout-dynamic--item {width: 49%;}",
+        ".mt-5,.my-5 {margin-top: 1.5rem !important;}"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "Unlock Your Radiance",
+        "title": "Indulge in Luxury Beauty Essentials",
+        "des": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "3fbc3961-b3b3-483b-9070-76e53c90c3c9": {
+      "type": "brand-carousel",
+      "blocks": {
+        "1ea584b4-c319-4a6f-ac76-df5b20cc80b9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-1.jpg",
+            "link": ""
+          }
+        },
+        "0ae42cd5-e8f3-4a45-ab9c-ad3b20972492": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-2.jpg",
+            "link": ""
+          }
+        },
+        "d54ccaef-6e7c-4b71-bf74-d2cd55cca0ed": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-3.jpg",
+            "link": ""
+          }
+        },
+        "ebfb6f46-1f14-4f33-a735-4197db47b620": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-4.jpg",
+            "link": ""
+          }
+        },
+        "3e84c94f-6581-40b0-a877-fbf249ec2e8f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-5.jpg",
+            "link": ""
+          }
+        },
+        "2f3c0ad1-9797-4b92-8642-4d870f8c5ea6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-6.jpg",
+            "link": ""
+          }
+        },
+        "e2d7c07d-a8ff-4b84-a996-63cf07a8e369": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-7.jpg",
+            "link": ""
+          }
+        },
+        "7bf8387c-5ce4-40bc-944f-cd0ff9659c37": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/insta-8.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ea584b4-c319-4a6f-ac76-df5b20cc80b9",
+        "0ae42cd5-e8f3-4a45-ab9c-ad3b20972492",
+        "d54ccaef-6e7c-4b71-bf74-d2cd55cca0ed",
+        "ebfb6f46-1f14-4f33-a735-4197db47b620",
+        "3e84c94f-6581-40b0-a877-fbf249ec2e8f",
+        "2f3c0ad1-9797-4b92-8642-4d870f8c5ea6",
+        "e2d7c07d-a8ff-4b84-a996-63cf07a8e369",
+        "7bf8387c-5ce4-40bc-944f-cd0ff9659c37"
+      ],
+      "custom_css": [],
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "",
+        "title": "Follow Us",
+        "des": "<span style=\"color:#e35353;\">@Lushy_Beauty_Store</span>",
+        "align-heading": "center",
+        "grayscale": false,
+        "arrows": false,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "width_image": 100,
+        "slidestoshow": 6,
+        "slidescroll": 1,
+        "pd_items": 2,
+        "rows": "1",
+        "paddingsection": "50px 0px 80px 0px",
+        "paddingmobile": "50px 0px 50px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "5b562030-1dcd-41c9-ac21-aee8367abbd3",
+    "78a84a3d-79cc-4e91-87bc-c68dcffe3bf1",
+    "c249c797-4270-4d1f-ab43-9e8a7ba4cc4f",
+    "076802e8-4d1d-49c0-92cf-72ec8c7302a1",
+    "cecf0886-05b4-4828-81ff-5950804dfcc4",
+    "ca1db164-a128-4943-8c1e-bf73e2391e40",
+    "3fbc3961-b3b3-483b-9070-76e53c90c3c9"
+  ]
+}
