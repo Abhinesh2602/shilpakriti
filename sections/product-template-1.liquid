@@ -444,10 +444,10 @@
             {%- when 'description' -%}
               {%- if block.settings.enable_tab -%}
               <div class="accordion">
-                <div class="tabcustom collapsed " data-toggle="collapse" data-target="#tabp-{{ block.id }}">
+                <div class="tabcustom" data-toggle="collapse" data-target="#tabp-{{ block.id }}">
                   {{ block.settings.title_tab | default: 'Description' }}
                 </div>
-                <div id="tabp-{{ block.id }}" class="collapse tab-content">
+                <div id="tabp-{{ block.id }}" class="collapse show tab-content">
                   <div class="py-3">
                     {{ product.description }}
                   </div>
@@ -574,6 +574,7 @@
                   </option>
                   {% endfor %}
                 </select>
+                  {%- comment -%}
                   {%- if block.settings.enable_hurrify -%}
                   <span class="js-hurrify mb-4 {% if current_variant.inventory_management %}{% if current_variant.inventory_quantity >= 10 or current_variant.inventory_quantity <= 0 %}hide{% endif %}{% else %}hide{% endif %}">
                     <p class="text-danger mb-2">{{ 'products.product.hurrify' | t : number: current_variant.inventory_quantity }}</p>
@@ -583,11 +584,12 @@
                     </div>
                   </span>
                   {%- endif -%}
-                <div class="product-form__quantity-submit pt-1">
-                  <div class="product-form__item product-form__item--quantity">
+                  {%- endcomment -%}
+                <div class="product-form__quantity-submit pt-2">
+                  {% comment %} <div class="product-form__item product-form__item--quantity">
                     <label class="hide" for="Quantity">{{ 'products.product.quantity' | t }}</label>
                     <input type="number" id="Quantity" name="quantity" value="1" min="1" class="product-form__input product-form__quantity">
-                  </div>
+                  </div> {% endcomment %}
                   <div class="product-form__item product-form__item--submit {% unless block.settings.enable_payment_button %} btn-disablebuynow {% endunless %}">
                     <button type="submit"
                             name="add"
@@ -821,6 +823,8 @@
       </div>
     </div>
   </div>
+
+
   {%- liquid
     render 'cross-sell'
     render 'upsell'

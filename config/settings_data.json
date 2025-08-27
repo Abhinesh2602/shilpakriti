@@ -2428,28 +2428,29 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "dbb31813-2c26-4013-a98e-fe9a3fb8a781": {
-            "type": "text",
-            "settings": {
-              "widthlogofooter": 130,
-              "title": "Company",
-              "text": "<ul style=\"line-height:1.6;\">\n    <li style=\"font-weight:200;\" class=\"mb-4\">\n        Find a location nearest<br> you. See <a href=\"#\" style=\"    text-decoration: underline;\n    text-underline-offset: 4px;\">Our Stores</a>\n    </li>\n    <li>\n        <div>\n<span style=\"font-weight:500;\">T:</span> + (08) 9055 0269</div>\n        <div>\n<span style=\"font-weight:500;\">E:</span> example@example.com</div>\n    </li>\n    \n</ul>",
-              "show_social": false,
-              "width": "25%"
-            }
-          },
           "0c325a8d-bfb1-450c-a284-90ce9f9f9ee5": {
             "type": "menu",
             "settings": {
-              "link_list": "",
+              "link_list": "main-menu",
               "width": "20%"
             }
           },
           "02938bc4-37e0-4199-a42d-5120a9cb648f": {
             "type": "menu",
             "settings": {
-              "link_list": "",
+              "link_list": "links-menu",
               "width": "20%"
+            }
+          },
+          "dbb31813-2c26-4013-a98e-fe9a3fb8a781": {
+            "type": "text",
+            "settings": {
+              "logofooter": "shopify://shop_images/shilpakritiLogo.png",
+              "widthlogofooter": 200,
+              "title": "About us",
+              "text": "<ul style=\"line-height:1.6;\">\n    <li style=\"font-weight:200;\" class=\"mb-4\">\n        Find a location nearest<br> you. See <a href=\"#\" style=\"    text-decoration: underline;\n    text-underline-offset: 4px;\">Our Stores</a>\n    </li>\n    <li>\n        <div>\n<span style=\"font-weight:500;\">T:</span> + (08) 9055 0269</div>\n        <div>\n<span style=\"font-weight:500;\">E:</span> example@example.com</div>\n    </li>\n    \n</ul>",
+              "show_social": false,
+              "width": "25%"
             }
           },
           "a0427cc6-35bf-4e6f-8da6-9542b963b62f": {
@@ -2463,12 +2464,20 @@
               "width": "25%"
             }
           },
+          "social_XRxNUi": {
+            "type": "social",
+            "settings": {
+              "title": "Follow us",
+              "width": "25%"
+            }
+          },
           "89eb5f1e-2260-49c8-840c-f97823a94c9a": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "bg_new": "#f7f7f7",
               "border_new": "#f7f7f7",
-              "btn_bg_new": "#000000",
+              "btn_bg_new": "#e35353",
               "btn_cl_new": "#ffffff",
               "btn_cl_new_hover": "#ffffff",
               "title": "Beauty Forward: Stay in the Know <br>with Our Newsletter",
@@ -2480,10 +2489,11 @@
           }
         },
         "block_order": [
-          "dbb31813-2c26-4013-a98e-fe9a3fb8a781",
           "0c325a8d-bfb1-450c-a284-90ce9f9f9ee5",
           "02938bc4-37e0-4199-a42d-5120a9cb648f",
+          "dbb31813-2c26-4013-a98e-fe9a3fb8a781",
           "a0427cc6-35bf-4e6f-8da6-9542b963b62f",
+          "social_XRxNUi",
           "89eb5f1e-2260-49c8-840c-f97823a94c9a"
         ],
         "settings": {
@@ -2498,7 +2508,7 @@
           "enable_border": false,
           "footer_font_family": "--g-font-2",
           "footer_font_size_title": 16,
-          "footer_font_weight": "700",
+          "footer_font_weight": "500",
           "footer_spacing": 0.1,
           "footer_typetext": "uppercase",
           "acc_mobile": true,
@@ -2508,7 +2518,7 @@
           "enable_language_selector": true,
           "payment_info": "svg",
           "copyright": false,
-          "customcopyright": "Copyright © 2023 <span style=\"color:#E35353;\">Lushy.</span> All rights reserved",
+          "customcopyright": "Copyright © 2025 <span style=\"color:#E35353;\">Shilpakriti.</span> All rights reserved",
           "padding_top": 80,
           "padding_bottom": 20,
           "m_padding_top": 48,

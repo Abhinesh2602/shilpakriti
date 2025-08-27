@@ -208,6 +208,7 @@
         "template--21723502674220__c249c797-4270-4d1f-ab43-9e8a7ba4cc4f-service-3",
         "9a8af888-00e2-4e5f-be50-00271a79a56e"
       ],
+      "disabled": true,
       "settings": {
         "animation": "",
         "setwidth": "container",
@@ -232,7 +233,7 @@
         "dots": true,
         "infinite": true,
         "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "paddingmobile": "0.",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -399,6 +400,7 @@
         "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-1",
         "template--21759657312556__ca1db164-a128-4943-8c1e-bf73e2391e40-image_block-2"
       ],
+      "disabled": true,
       "custom_css": [
         ".layout-dynamic .layout-dynamic--item:nth-child(4n + 3) {margin: 0;}",
         ".layout-dynamic .layout-dynamic--item:nth-child(odd) {float: none;}",
@@ -408,7 +410,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
         "title_top": "Unlock Your Radiance",
         "title": "Indulge in Luxury Beauty Essentials",

@@ -70,7 +70,6 @@
         },
         "1431e891-e819-4fa1-8416-0cb3956f0e39": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "enable_tab": true,
             "title_tab": "Description"
@@ -220,12 +219,12 @@
         "883720d7-3346-4495-85a0-add8b3d7a51f"
       ],
       "settings": {
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "media_style": "media-bottom",
         "media_size": "normal",
         "image_size": "portrait",
         "enable_video_looping": true,
-        "stock_enable": true,
+        "stock_enable": false,
         "sizeguide_enable": false,
         "sizeguide_title": "Size Guide",
         "sizeguide_page": "sizeguide",
@@ -244,6 +243,7 @@
     },
     "product-requently": {
       "type": "product-bundle",
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "bgsection": "#ffffff",
@@ -263,6 +263,7 @@
       "blocks": {
         "6889c9ba-caef-4edd-9757-6711505cb095": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "title_tab": "Description"
           }
@@ -301,6 +302,7 @@
         "147e9960-c5fe-44f4-8469-9583a9752a0a",
         "86f16245-d6c0-4cfd-a4c8-f96a893dc128"
       ],
+      "disabled": true,
       "settings": {
         "paddingsection": "48px 0px 40px 0px",
         "paddingmobile": "32px 0px 32px 0px",
@@ -604,13 +606,6 @@
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8": {
       "type": "faq-accordion",
       "blocks": {
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Is the shipping free?",
-            "faq_des": "<p>Yes. Worldwide shipping is already included in the price. We use DHL express with 3 days delivery time.</p>"
-          }
-        },
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1": {
           "type": "faq",
           "settings": {
@@ -624,12 +619,19 @@
             "faq_title": "Can I change or return my item?",
             "faq_des": "<p>If you want to change a product into another model, strap color etc., please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>"
           }
+        },
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Is the shipping free?",
+            "faq_des": "<p>Yes. Worldwide shipping is already included in the price. We use DHL express with 3 days delivery time.</p>"
+          }
         }
       },
       "block_order": [
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0",
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1",
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2"
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2",
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0"
       ],
       "settings": {
         "animation": "",

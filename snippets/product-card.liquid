@@ -24,7 +24,7 @@
 {% endcapture %}
 
 {%- comment -%} price {%- endcomment -%}
-{% capture price %}
+{% comment %} {% capture price %}
   <div class="product-card__price mb-1 {% if product.compare_at_price > product.price %} product-card__pricesale {% endif %}">
   {%- if product.compare_at_price > product.price -%}
   {%- if product.price_varies -%}
@@ -47,7 +47,7 @@
   {%- endif -%}
   {%- endif -%}
   </div>
-{% endcapture %}
+{% endcapture %} {% endcomment %}
 {% capture review %}
   {%- if settings.enable_review -%}
   <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>

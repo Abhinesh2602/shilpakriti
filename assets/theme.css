@@ -8425,6 +8425,7 @@ body.video-playing {
 }
 .product-card__swatch {
   width: 100%;
+  margin-bottom: 4px;
   left: 0;
   bottom: 0;
 }
@@ -11888,6 +11889,7 @@ blockquote::before {
   color: #fff;
   display: none;
 }
+
 @media (max-width: 576px) {
   .countdown-header ul li::before {
     display: none;
@@ -11896,7 +11898,8 @@ blockquote::before {
     gap: 15px;
   }
   .product-card__name {
-    font-size: 15px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
   }
   .product-card--style2 .product-form__item--submit .js-grid-cart > span {
     letter-spacing: 0;
